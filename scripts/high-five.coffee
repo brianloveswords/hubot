@@ -15,9 +15,11 @@ responses = [
   'http://x02.xanga.com/ea1f631039730276270930/z220125618.gif',
   'http://www.tristanx.com/wp-content/uploads/gorilla_shark_highfive.jpg',
   'http://i9.photobucket.com/albums/a65/Hyel/Gifs/REDDWARF-HighFiveLowFive.gif#high%20five%20gif',
-  'http://thisiscoreythompson.com/daily-doodle/wp-content/uploads/2011/06/internet-high-five.gif'
+  'http://thisiscoreythompson.com/daily-doodle/wp-content/uploads/2011/06/internet-high-five.gif',
+  'http://28.media.tumblr.com/tumblr_l1ajhotYN81qzqzo6o1_250.gif',
 ]
 
 module.exports = (robot) ->
   robot.respond /high.?five/i, (msg) ->
-    msg.send msg.random responses
+    response = msg.random responses
+    msg.send "This high five goes out to #{msg.message.user.name}: #{response}"
