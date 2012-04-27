@@ -3,7 +3,6 @@
 # mfbt - Is it?
 
 module.exports = (robot) ->
-  console.dir robot
   robot.hear /((is it)|(it is)|(it\'s)) mfbt/i, (msg) ->
     now = new Date
     hour = now.getUTCHours()
