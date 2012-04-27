@@ -4,7 +4,7 @@
 #
 
 module.exports = (robot) ->
-  robot.respond /(?:(?:get|find|show) (?:me)? an? )?(.*) tweet$/i, (msg) ->
+  robot.respond /(?:(?:get|find|show) (?:me)? an? )?(.*) tweet/i, (msg) ->
     rawSearch = msg.match[1]
     search = escape(rawSearch)
     msg.http('http://search.twitter.com/search.json')
