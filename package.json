@@ -15,6 +15,7 @@
   },
 
   "dependencies": {
+    "jsdom": "*",
     "soupselect": "*",
     "htmlparser": "*",
     "hubot": "2.1.4",
