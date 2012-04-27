@@ -20,6 +20,6 @@ responses = [
 ]
 
 module.exports = (robot) ->
-  robot.respond /high.?five/i, (msg) ->
+  robot.respond /.*high.?five.*/i, (msg) ->
     response = msg.random responses
     msg.send "This high five goes out to #{msg.message.user.name}: #{response}"
