@@ -19,7 +19,7 @@
     "soupselect": "*",
     "htmlparser": "*",
     "hubot": "2.1.4",
-    "hubot-irc": ">=0.0.6",
+    "hubot-irc": "0.0.8",
     "hubot-scripts": ">=2.0.4",
     "optparse": "1.0.3"    
   }
